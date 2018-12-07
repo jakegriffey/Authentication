@@ -1,0 +1,48 @@
+<!doctype html>
+<html ng-app="myApp">
+
+<head>
+    <title>User Login and Sessions</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
+    <script src="/javascripts/my_app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+</head>
+
+<body class="whiteText darkerRedBG">
+    <div ng-controller="myController" class="darkblueBG normalPadding">
+        <h2 class="header centered" id="welcomeText">Welcome. You are Logged In as
+            <%= username %>
+        </h2>
+    </div>
+
+    <div class="darkRedBG normalPadding" style="padding-left: 15px; padding-right: 15px">
+        <a id="logoutLink" href="/logout">Logout</a><br>
+        <a id="editLink" href="/user">Edit User</a>
+        <p>Place Your Code Here
+            <p>
+    </div>
+
+    <div class="container-fluid darkPurpleBG normalPadding" style="padding-top: 0px;">
+        <hr>
+        <span id="indexMsg">
+        <%= msg %>
+    </span>
+    </div>
+
+    <div class="darkerRedBG normalPadding" style="padding-top: 0px; padding-left: 15px; padding-right: 15px;">
+        <hr>
+        <span id="colorText">
+        Color
+        <%= color %>
+      </span>
+    </div>
+
+    
+</body>
+
+</html>

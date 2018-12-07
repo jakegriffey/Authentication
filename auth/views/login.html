@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>User Login and Sessions</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+</head>
+
+<body class="whiteText">
+    <div class="container-fluid header darkblueBG">
+        <p>Login</p>
+    </div>
+
+    <div class="container-fluid darkRedBG normalPadding">
+        <div class="form-group">
+            <form method="POST" action="/login">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" class="form-control"><br>
+                <labelfor="password">Password:</label>
+                <input type="password" id="password" name="password" class = "form-control"><br>
+                <button type = "submit" id="login" class = "btn btn-primary">Login</button><br><br>
+                <a id="signUpLink" href="/signup">Sign Up</a>
+            </form>
+        </div>
+
+    </div>
+
+
+
+    <div class="container-fluid darkPurpleBG normalPadding">
+        <hr>
+        <span id="loginMsg">
+        <%= msg %>
+        </span>
+    </div>
+
+</body>
+
+</html>

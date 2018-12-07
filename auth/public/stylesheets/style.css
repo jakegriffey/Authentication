@@ -1,0 +1,57 @@
+@font-face {
+  font-family: BrainWants;
+  src: url("./BrainWantsUD.otf");
+}
+
+@font-face {
+  font-family: LeoscarSerif;
+  src: url("./LeoscarSerif.ttf");
+}
+
+body {
+  font-size: 20px;
+  font-family: LeoscarSerif;
+  background-color: #1f3944;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.darkRedBG {
+  background-color: #42262d;
+}
+
+.darkblueBG {
+  background-color: #122f3c;
+}
+
+.darkPurpleBG {
+  background-color: #322c3a;
+}
+
+.darkerRedBG {
+  background-color: #361f25;
+}
+
+
+.header {
+  font-family: BrainWants;
+  font-size: 96px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.whiteText {
+  color: white;
+}
+
+.centered {
+  text-align: center;
+}
+
+.normalPadding {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
